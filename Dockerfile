@@ -1,5 +1,5 @@
 FROM alpine:3.7
-RUN apk add nginx=1.12.2-r3 \
+RUN apk add nginx=1.12.2-r4 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache && \
     mkdir /run/nginx
