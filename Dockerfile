@@ -1,6 +1,6 @@
-FROM alpine:3.7
+FROM alpine:3.8
 RUN apk upgrade --no-cache
-RUN apk add nginx=1.14.0-r0 \
+RUN apk add nginx=1.14.0-r1 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
     --no-cache && \
     mkdir /run/nginx
