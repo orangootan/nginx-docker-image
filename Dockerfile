@@ -1,8 +1,7 @@
-FROM alpine:3.13.0
+FROM alpine:3.13.3
 RUN apk upgrade --no-cache
-RUN apk add nginx=1.18.0-r14 \
+RUN apk add nginx=1.18.0-r15 \
     --repository https://nl.alpinelinux.org/alpine/edge/main \
-    --no-cache && \
-    mkdir /run/nginx
+    --no-cache
 #VOLUME /etc/nginx /var/log/nginx /var/www
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
